@@ -2,42 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <style>
+      * {
+        font-family: "Areal", sans-serif;
+      }
+    </style>
+
+    <title>Admin Dashboard</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
