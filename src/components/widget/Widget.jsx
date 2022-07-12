@@ -14,7 +14,7 @@ const Widget = ({ type }) => {
       data = {
         title: "USERS",
         isMoney: false,
-        amount: 16.8k,
+        amount: "16.8k",
         diff: 18,
         link: "See all users",
         icon: (
@@ -33,7 +33,7 @@ const Widget = ({ type }) => {
       data = {
         title: "ORDERS",
         isMoney: false,
-        amount: 6.5k,
+        amount: "6.5k",
         diff: 8.7,
         link: "View all orders",
         icon: (
@@ -52,7 +52,7 @@ const Widget = ({ type }) => {
       data = {
         title: "EARNINGS",
         isMoney: true,
-        amount: 26.1k,
+        amount: "26.1k",
         diff: 4.9,
         link: "View net earnings",
         icon: (
@@ -71,7 +71,7 @@ const Widget = ({ type }) => {
       data = {
         title: "BALANCE",
         isMoney: true,
-        amount: 109k,
+        amount: "109k",
         diff: 5.4,
         link: "See details",
         icon: (
