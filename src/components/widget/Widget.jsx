@@ -9,14 +9,13 @@ import "./Widget.scss";
 const Widget = ({ type }) => {
   let data;
 
-  const amount = 100;
-  const diff = 20;
-
   switch (type) {
     case "user":
       data = {
         title: "USERS",
         isMoney: false,
+        amount: 16.8k,
+        diff: 18,
         link: "See all users",
         icon: (
           <PersonOutlineIcon
@@ -33,7 +32,9 @@ const Widget = ({ type }) => {
     case "order":
       data = {
         title: "ORDERS",
-        isMoney: true,
+        isMoney: false,
+        amount: 6.5k,
+        diff: 8.7,
         link: "View all orders",
         icon: (
           <ShoppingCartOutlinedIcon
@@ -50,7 +51,9 @@ const Widget = ({ type }) => {
     case "earning":
       data = {
         title: "EARNINGS",
-        isMoney: false,
+        isMoney: true,
+        amount: 26.1k,
+        diff: 4.9,
         link: "View net earnings",
         icon: (
           <MonetizationOnOutlinedIcon
@@ -68,6 +71,8 @@ const Widget = ({ type }) => {
       data = {
         title: "BALANCE",
         isMoney: true,
+        amount: 109k,
+        diff: 5.4,
         link: "See details",
         icon: (
           <AccountBalanceWalletOutlinedIcon
@@ -90,14 +95,14 @@ const Widget = ({ type }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "$"} {amount}
+          {data.isMoney && "$"} {data.amount}
         </span>
         <span className="link">{data.link}</span>
       </div>
       <div className="right">
         <div className="percentage positive">
           <KeyboardArrowUpIcon />
-          {diff} %
+          {data.diff} %
         </div>
 
         <div>{data.icon}</div>
